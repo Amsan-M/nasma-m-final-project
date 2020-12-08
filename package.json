@@ -1,0 +1,24 @@
+{
+  "name": "final-project",
+  "version": "1.0.0",
+  "description": "Comp 2132 final project",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./styles/styles.scss:./css/style.css"
+    
+  },
+  
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Amsan-M/nasma-m-final-project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Amsan-M/nasma-m-final-project/issues"
+  },
+  "homepage": "https://github.com/Amsan-M/nasma-m-final-project#readme",
+  "dependencies": {
+    "node": "^15.3.0"
+  }
+}

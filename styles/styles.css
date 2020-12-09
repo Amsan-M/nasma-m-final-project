@@ -1,13 +1,20 @@
+footer {
+  margin: 2%;
+  padding: 3%;
+  width: 90%;
+  color: white;
+  font-family: "Rubik Mono One", sans-serif;
+}
+footer p {
+  color: darkcyan;
+  text-shadow: 8px 8px 0 rgba(255, 0, 180, 0.5);
+  line-height: 1.5;
+}
+
 body {
   background-color: black;
   width: 100%;
   height: 100%;
-}
-
-header, .main-wrapper, footer {
-  margin: 2%;
-  padding: 3%;
-  width: 90%;
 }
 
 main {
@@ -24,9 +31,10 @@ main {
   font-size: 30px;
 }
 
-header, footer {
-  color: white;
-  font-family: "Rubik Mono One", sans-serif;
+.main-wrapper {
+  margin: 2%;
+  padding: 3%;
+  width: 90%;
 }
 
 img {
@@ -44,6 +52,7 @@ img {
   margin-bottom: 5%;
   border: 4px solid;
   padding: 5%;
+  background-color: gainsboro;
 }
 
 .player-dices-wrapper,
@@ -55,7 +64,8 @@ img {
   align-items: center;
 }
 
-.player-dices, .computer-dices {
+.player-dices,
+.computer-dices {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -63,17 +73,6 @@ img {
 
 .split-screen {
   width: 10%;
-}
-
-.scores-wrapper {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-
-#score-title {
-  width: 100%;
-  text-align: center;
 }
 
 .buttons-wrapper {
@@ -100,9 +99,28 @@ button {
   color: white;
 }
 
+header {
+  color: white;
+  font-family: "Rubik Mono One", sans-serif;
+  margin: 2%;
+  padding: 3%;
+  width: 90%;
+}
+
+.scores-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+#score-title {
+  width: 100%;
+  text-align: center;
+}
+
 #pop-up-winner {
   position: absolute;
-  background-color: whitesmoke;
+  background-color: black;
   font-size: 40px;
   width: 100%;
   height: 100%;
@@ -112,5 +130,23 @@ button {
   justify-content: center;
   align-items: center;
 }
+#pop-up-winner #result {
+  margin: 8%;
+  color: darkcyan;
+  text-shadow: 8px 8px 0 rgba(255, 0, 180, 0.5);
+  line-height: 1.5;
+}
 
-/*# sourceMappingURL=style.css.map */
+#result-winner {
+  color: darkcyan;
+  text-shadow: 8px 8px 0 rgba(255, 0, 180, 0.5);
+  line-height: 1.5;
+}
+
+.result-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*# sourceMappingURL=styles.css.map */

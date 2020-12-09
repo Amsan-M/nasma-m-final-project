@@ -1,0 +1,5 @@
+@mixin retroStyle {
+    color: $gameOver-top;
+    text-shadow: 8px 8px 0 $gameOver-bottom;
+    line-height: 1.5;
+}

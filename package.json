@@ -4,7 +4,7 @@
   "description": "Comp 2132 final project",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./styles/styles.scss:./css/style.css"
+    "sass": "sass --watch ./styles/styles.scss:./styles/styles.css"
     
   },
   

@@ -7,10 +7,10 @@
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
   <script type="text/javascript" src="scripts/game.js"></script>
   <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
@@ -20,128 +20,108 @@
   </header>
 
   <main>
-  
-  <div class=main-wrapper>
 
-    <div class="game-name">
-      <h1>DICE GAME</h1>
-    </div>
+    <div class=main-wrapper>
 
-    <div class="dices-wrapper">
-      <section id="pop-up-winner">
-        <div class="result-wrapper">
-          <div id="result"></div>
-          <div id="test"></div>
-        </div>
-      </section>
+      <div class="game-name">
+        <h1>DICE GAME</h1>
+      </div>
 
-      <div class="player-dices-wrapper">
+      <div class="dices-wrapper">
 
-        <div class="player-dices">
-
-          <h2>You</h2>
-          <div class="dices">
-            <figure>
-              <img src="images/player-dice-1.svg" id="dice-image1" alt="">
-            </figure>
-            <!-- <p class="count" id="player-dice1"></p> -->
-
-            <!-- <h1>dice2</h1> -->
-            <figure>
-              <img src="images/player-dice-1.svg" id="dice-image2" alt="">
-            </figure>
-
-          <!-- <p id="player-dice2"></p> -->
+        <section id="pop-up-winner">
+          <div class="result-wrapper">
+            <div id="result"></div>
+            <div id="result-winner"></div>
           </div>
+        </section>
+
+        <div class="player-dices-wrapper">
+
+          <div class="player-dices">
+
+            <h2>You</h2>
+
+            <div class="dices">
+              <figure>
+                <img src="images/player-dice-1.svg" id="dice-image1" alt="">
+              </figure>
+
+              <figure>
+                <img src="images/player-dice-1.svg" id="dice-image2" alt="">
+              </figure>
+
+            </div>
+
+          </div>
+
         </div>
 
-      </div>
+        <div class="screen-split">
+          <h2>Vs</h2>
+        </div>
 
-      <div class="screen-split">
-        <h2>Vs</h2>
-      </div>
-
-      <div class="computer-dices-wrapper">
-        <div class="computer-dices">
+        <div class="computer-dices-wrapper">
+          <div class="computer-dices">
 
             <h2>Computer</h2>
-          <div class="dices">
-            <figure>
-              <img src="images/computer-dice-1.svg" id="comp-dice-image1" alt="">
-            </figure>
-            <!-- <p id="computer-dice1"></p> -->
+            <div class="dices">
 
-            <!-- <h1>dice2</h1> -->
-            <figure>
-              <img src="images/computer-dice-1.svg" id="comp-dice-image2" alt="">
-            </figure>
-            <!-- <p id="computer-dice2"></p> -->
+              <figure>
+                <img src="images/computer-dice-1.svg" id="comp-dice-image1" alt="">
+              </figure>
+
+              <figure>
+                <img src="images/computer-dice-1.svg" id="comp-dice-image2" alt="">
+              </figure>
+
+            </div>
+
+
           </div>
-
-    
         </div>
+
       </div>
+
+      <div class="buttons-wrapper">
+        <button id="roll-dices"> Roll Dices </button>
+        <button id="restart">Restart</button>
+      </div>
+
+      <h1 id="score-title"></h1>
+
+      <div class="scores-wrapper">
+
+        <div class="round-wrapper">
+          <h3 id="round1"></h3>
+          <p id="player-score1"></p>
+          <p id="computer-score1"></p>
+        </div>
+        <div class="round-wrapper">
+          <h3 id="round2"></h3>
+          <p id="player-score2"></p>
+          <p id="computer-score2"></p>
+        </div>
+        <div class="round-wrapper">
+          <h3 id="round3"></h3>
+          <p id="player-score3"></p>
+          <p id="computer-score3"></p>
+        </div>
+        <div class="round-wrapper">
+          <h3 id="roundsTotal"></h3>
+          <p id="player-score-total"></p>
+          <p id="computer-score-total"></p>
+        </div>
+
+      </div>
+
 
     </div>
-    
-    <div class="buttons-wrapper">
-      <button id="roll-dices"> Roll Dices </button>
-      <button id="restart">Restart</button>
-    </div>
-    <h1 id="score-title"></h1>
-    <div class="scores-wrapper">
-
-      <!-- <div class="player-scores">      -->
-      <div class="round-wrapper">
-        <h3 id="round1"></h3>
-        <p id="player-score1"></p>
-        <p id="computer-score1"></p>
-      </div>
-      <div class="round-wrapper">
-        <h3 id="round2"></h3>
-        <p id="player-score2"></p>
-        <p id="computer-score2"></p>
-      </div>
-      <div class="round-wrapper">
-        <h3 id="round3"></h3>
-        <p id="player-score3"></p>
-        <p id="computer-score3"></p>
-      </div>
-      <div class="round-wrapper">
-        <h3 id="roundsTotal"></h3>
-        <p id="player-score-total"></p>
-        <p id="computer-score-total"></p>
-      </div>
-      <!-- </div> -->
-
-      <!-- <div class="computer-scores"> -->
-       
-       
-        
-      <!-- </div> -->
-     
-      <!-- <div class="player-scores">     
-        <p id="player-score1"></p>
-        <p id="player-score2"></p>
-        <p id="player-score3"></p>
-      </div>
-
-      <div class="computer-scores">
-        <p id="computer-score1"></p>
-        <p id="computer-score2"></p>
-        <p id="computer-score3"></p>
-      </div> -->
-    </div>
-
-  
-
-
-  </div>
-</main>
-<footer>
-  <p>Final Project</p>
-  <p>Nasma M</p>
-</footer>
+  </main>
+  <footer>
+    <p>Final Project</p>
+    <p>Nasma M</p>
+  </footer>
 
 </body>
 

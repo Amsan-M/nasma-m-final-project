@@ -160,15 +160,15 @@ $(document).ready(function () {
             $(playerScoreTotal).text("Player: "+finalScorePlayer);
             $(computerScoreTotal).text("Computer: "+finalScoreComputer);
 
-
+            $("#result").text("GAME OVER");
             if (finalScoreComputer > finalScorePlayer) {
-                $("#result").text("Computer Wins");
+                $("#result-winner").text("You loose!");
                 return;
-            } else if (finalScoreComputer < finalScorePlayer) {
-                $("#result").text("You Win");
+            } else if (finalScoreComputer < finalScorePlayer) {             
+                $("#result-winner").text("You Win!");
                 return;
             } else {
-                $("#result").text("No One Wins");
+                $("#result-winner").text("No One Wins");
                 return;
             }
 

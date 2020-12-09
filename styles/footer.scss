@@ -1,0 +1,10 @@
+footer{
+    margin:2%;
+    padding:3%;
+    width:90%;
+    color:$white;
+    font-family: 'Rubik Mono One', sans-serif; 
+    p{
+        @include retroStyle;
+    }
+} 
